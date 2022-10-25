@@ -48,7 +48,6 @@ namespace WBCapture
 			{
 				g.CopyFromScreen(m_rect.Location, new Point(0, 0), m_rect.Size);
 			}
-			//Invalidate();
 			pictureBox1.Invalidate();
 		}
 

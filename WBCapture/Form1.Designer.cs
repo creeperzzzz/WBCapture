@@ -30,12 +30,13 @@
 		{
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
 			this.panel1 = new System.Windows.Forms.Panel();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
+			this.textInterval = new System.Windows.Forms.TextBox();
 			this.button1 = new System.Windows.Forms.Button();
 			this.chkTop = new System.Windows.Forms.CheckBox();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.textInterval = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -52,6 +53,7 @@
 			// 
 			// panel1
 			// 
+			this.panel1.Controls.Add(this.label3);
 			this.panel1.Controls.Add(this.label2);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Controls.Add(this.textInterval);
@@ -62,6 +64,34 @@
 			this.panel1.Name = "panel1";
 			this.panel1.Size = new System.Drawing.Size(430, 80);
 			this.panel1.TabIndex = 1;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(13, 18);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(119, 12);
+			this.label2.TabIndex = 4;
+			this.label2.Text = "1000,1000 / 1000,1000";
+			// 
+			// label1
+			// 
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(12, 50);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(59, 12);
+			this.label1.TabIndex = 3;
+			this.label1.Text = "更新間隔：";
+			// 
+			// textInterval
+			// 
+			this.textInterval.Location = new System.Drawing.Point(77, 46);
+			this.textInterval.Name = "textInterval";
+			this.textInterval.RightToLeft = System.Windows.Forms.RightToLeft.No;
+			this.textInterval.Size = new System.Drawing.Size(39, 19);
+			this.textInterval.TabIndex = 2;
+			this.textInterval.Text = "1000";
+			this.textInterval.TextChanged += new System.EventHandler(this.textInterval_TextChanged);
 			// 
 			// button1
 			// 
@@ -76,7 +106,7 @@
 			// chkTop
 			// 
 			this.chkTop.AutoSize = true;
-			this.chkTop.Location = new System.Drawing.Point(155, 49);
+			this.chkTop.Location = new System.Drawing.Point(182, 49);
 			this.chkTop.Name = "chkTop";
 			this.chkTop.Size = new System.Drawing.Size(60, 16);
 			this.chkTop.TabIndex = 0;
@@ -93,33 +123,14 @@
 			this.panel2.Size = new System.Drawing.Size(430, 397);
 			this.panel2.TabIndex = 2;
 			// 
-			// textInterval
+			// label3
 			// 
-			this.textInterval.Location = new System.Drawing.Point(77, 47);
-			this.textInterval.Name = "textInterval";
-			this.textInterval.RightToLeft = System.Windows.Forms.RightToLeft.No;
-			this.textInterval.Size = new System.Drawing.Size(45, 19);
-			this.textInterval.TabIndex = 2;
-			this.textInterval.Text = "1000";
-			this.textInterval.TextChanged += new System.EventHandler(this.textInterval_TextChanged);
-			// 
-			// label1
-			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(12, 50);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(59, 12);
-			this.label1.TabIndex = 3;
-			this.label1.Text = "更新間隔：";
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(13, 18);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(119, 12);
-			this.label2.TabIndex = 4;
-			this.label2.Text = "1000,1000 / 1000,1000";
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(122, 50);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(31, 12);
+			this.label3.TabIndex = 5;
+			this.label3.Text = "ミリ秒";
 			// 
 			// Form1
 			// 
@@ -151,6 +162,7 @@
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.TextBox textInterval;
+		private System.Windows.Forms.Label label3;
 	}
 }
 
